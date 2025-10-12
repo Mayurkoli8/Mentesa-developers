@@ -19,6 +19,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+
 }
 
 .background-animation {
@@ -93,22 +94,28 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
+    -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-}
-
-.logo-icon {
-    color: var(--color-text);
-}
-
-.logo span {
-    font-size: 1.25rem;
+    gap: 8px; /* space between image and text */
     font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff; /* adjust to match your theme */
 }
+
+.logo img {
+    width: 35%;
+    height: 35%;
+    object-fit: contain;
+}
+
 
 nav {
     display: flex;
