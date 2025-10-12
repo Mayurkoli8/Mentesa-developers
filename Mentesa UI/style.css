@@ -296,6 +296,32 @@ footer {
     background: linear-gradient(45deg, var(--color-cyan), var(--color-magenta)) border-box;
 }
 
+#member0{
+    width: 130px;
+  height: 130px;
+  
+  /* Make the image's viewport circular */
+  border-radius: 50%;
+  
+  /* Apply a permanent zoom */
+  transform: scale(1.2);
+  
+  /* Make the image fill the defined circular area */
+  object-fit: cover;
+  
+  /* Position the zoomed-in image. Adjust these values as needed. */
+  object-position: 50% 40%;
+}
+
+#member1{
+    object-fit: cover;
+    object-position: 40% 25% ;
+}
+#member2{
+    object-fit: cover;
+    object-position: 40% 58% ;
+}
+
 .team-member h3 {
     font-size: 1.35rem; /* slightly larger text */
     color: var(--color-text);
@@ -351,6 +377,15 @@ footer {
     object-fit: cover;
     border: 3px solid transparent;
     background: linear-gradient(45deg, var(--color-cyan), var(--color-magenta)) border-box;
+}
+
+#member1{
+    object-fit: cover;
+    object-position: 40% 25% ;
+}
+#member2{
+    object-fit: cover;
+    object-position: 40% 58% ;
 }
 
 .detail-text {
