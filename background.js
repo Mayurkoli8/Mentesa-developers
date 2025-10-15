@@ -301,5 +301,15 @@ class BackgroundAnimation {
 }
 
 window.addEventListener('load', () => {
+    // Initialize background animation
     new BackgroundAnimation();
+
+    // --- MOBILE MENU TOGGLE ---
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-menu");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("show");
+    });
 });
+

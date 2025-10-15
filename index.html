@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="icon.png" type="image/x-icon">
+
+
 </head>
+
 <body>
     <div class="background-animation">
         <svg class="lines" width="100%" height="100%">
@@ -17,9 +21,15 @@
 
     <header>
         <div class="logo">
-            <a href="https://mentesa.live" > <img src="logo.png" alt="Mentesa Logo" class="logo-icon"></a>
+            <a href="https://mentesa.live"> <img src="logo.png" alt="Mentesa Logo" class="logo-icon"></a>
         </div>
-        <nav>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
             <ul>
                 <li><a href="https://mentesa.live">Mentesa</a></li>
                 <li><a href="#home">Home</a></li>
@@ -34,67 +44,83 @@
         <p class="subtitle">The minds behind Mentesa.live</p>
 
         <div class="team-section">
-            <a href="#mayur"><div class="team-member">
-                <img id="member0" src="member_0.jpg" alt="Team Member 1">
-                <h3>Mayur Koli</h3>
-                <p>Founder & Lead Developer</p>
-            </div></a>
-              <a href="#anirudha"><div class="team-member">
-                <img id="member1" src="member_1.jpg" alt="Team Member 2">
-                <h3>Anirudh Kapurkar</h3>
-                <p>Frontend Designer</p>
-            </div></a>
-              <a href="#niharika"><div class="team-member">
-                <img id="member2" src="member_2.jpg" alt="Team Member 3">
-                <h3>Niharika Wagh</h3>
-                <p>Backend Developer & Research Associate</p>
-            </div></a>
+            <a href="#mayur">
+                <div class="team-member">
+                    <img id="member0" src="member_0.jpg" alt="Team Member 1">
+                    <h3>Mayur Koli</h3>
+                    <p>Founder & Lead Developer</p>
+                </div>
+            </a>
+            <a href="#anirudha">
+                <div class="team-member">
+                    <img id="member1" src="member_1.jpg" alt="Team Member 2">
+                    <h3>Anirudh Kapurkar</h3>
+                    <p>Frontend Designer</p>
+                </div>
+            </a>
+            <a href="#niharika">
+                <div class="team-member">
+                    <img id="member2" src="member_2.jpg" alt="Team Member 3">
+                    <h3>Niharika Wagh</h3>
+                    <p>Backend Developer & Research Associate</p>
+                </div>
+            </a>
         </div>
 
         <!-- Detailed Team Member Sections -->
         <section class="member-details">
 
             <!-- 1️⃣ First Member (Left Aligned) -->
-            <a href="https://mayurkoli8.github.io/portfolio/" style="color:inherit; text-decoration:none;"><div class="member-detail left" id="mayur">
-                <img id="member0" src="member_0.jpg" alt="Mayur Koli">
-                <div class="detail-text">
-                    <h2>Mayur Koli</h2>
-                    <h4>Founder & Lead Developer</h4>
-                    <p>
-                        Mayur leads Mentesa’s innovation and development, combining creativity with
-                        cutting-edge AI design. He specializes in building intelligent interfaces and drives
-                        the core architecture of the platform to make AI customization seamless and engaging.
-                    </p>
+            <a href="https://mayurkoli8.github.io/portfolio/" style="color:inherit; text-decoration:none;">
+                <div class="member-detail left" id="mayur">
+                    <img id="member0" src="member_0.jpg" alt="Mayur Koli">
+                    <div class="detail-text">
+                        <h2>Mayur Koli</h2>
+                        <h4>Founder & Lead Developer</h4>
+                        <p>
+                            Mayur leads Mentesa’s innovation and development, combining creativity with
+                            cutting-edge AI design. He specializes in building intelligent interfaces and drives
+                            the core architecture of the platform to make AI customization seamless and engaging.
+                        </p>
+                    </div>
                 </div>
-            </div></a>
+            </a>
 
             <!-- 2️⃣ Second Member (Right Aligned) -->
-            <a href="https://github.com/AnirudhaKapurkar" style="color:inherit; text-decoration:none;"><div class="member-detail right" id="anirudha">
-                <img id="member1" src="member_1.jpg" alt="Anirudha Kapurkar" margin-top:60px>
-                <div class="detail-text">
-                    <h2>Anirudh Kapurkar</h2>
-                    <h4>Frontend Developr</h4>
-                    <p>
-                        Responsible for designing and implementing the user interface, ensuring a seamless and visually appealing experience. 
-                        Translates design concepts into responsive, interactive web pages while collaborating closely with backend developers 
-                        to integrate functionality, maintain usability, and enhance the overall user experience.
-                    </p>
+            <a href="https://github.com/AnirudhaKapurkar" style="color:inherit; text-decoration:none;">
+                <div class="member-detail right" id="anirudha">
+                    <img id="member1" src="member_1.jpg" alt="Anirudha Kapurkar" margin-top:60px>
+                    <div class="detail-text">
+                        <h2>Anirudh Kapurkar</h2>
+                        <h4>Frontend Developr</h4>
+                        <p>
+                            Responsible for designing and implementing the user interface, ensuring a seamless and
+                            visually appealing experience.
+                            Translates design concepts into responsive, interactive web pages while collaborating
+                            closely with backend developers
+                            to integrate functionality, maintain usability, and enhance the overall user experience.
+                        </p>
+                    </div>
                 </div>
-            </div></a>
+            </a>
 
             <!-- 3️⃣ Third Member (Left Aligned) -->
-            <a href="https://github.com/ByteAlchemist26" style="color:inherit; text-decoration:none;"><div class="member-detail left" id="niharika">
-                <img id="member2" src="member_2.jpg" alt="Niharika Wagh">
-                <div class="detail-text">
-                    <h2>Niharika Wagh</h2>
-                    <h4>Backend Developer & Research Associate</h4>
-                    <p>
-                        Responsible for developing and maintaining backend systems while also contributing to research and technical documentation. 
-                        Bridges development with research by implementing efficient solutions, analyzing data, and supporting academic publications, 
-                        ensuring the project is both technically robust and well-documented.
-                    </p>
+            <a href="https://github.com/ByteAlchemist26" style="color:inherit; text-decoration:none;">
+                <div class="member-detail left" id="niharika">
+                    <img id="member2" src="member_2.jpg" alt="Niharika Wagh">
+                    <div class="detail-text">
+                        <h2>Niharika Wagh</h2>
+                        <h4>Backend Developer & Research Associate</h4>
+                        <p>
+                            Responsible for developing and maintaining backend systems while also contributing to
+                            research and technical documentation.
+                            Bridges development with research by implementing efficient solutions, analyzing data, and
+                            supporting academic publications,
+                            ensuring the project is both technically robust and well-documented.
+                        </p>
+                    </div>
                 </div>
-            </div></a>
+            </a>
 
         </section>
         <!-- Contact Us Section -->
@@ -128,4 +154,5 @@
 
     <script src="background.js"></script>
 </body>
+
 </html>
