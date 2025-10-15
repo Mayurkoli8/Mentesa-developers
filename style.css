@@ -111,8 +111,8 @@ header {
 }
 
 .logo img {
-    width: 35%;
-    height: 35%;
+    width:10em;
+    height: 3em;
     object-fit: contain;
 }
 
